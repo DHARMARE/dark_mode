@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>Light and dark mode</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="hero">
+        <nav>
+            <img src="images/logo.webp" alt="">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Hire Me</a></li>
+            </ul>
+            <img src="images/moon.png" id="icon" alt="">
+        </nav>
+
+        <div class="info">
+            <h1>I'm Kane Williamson</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus aut praesentium numquam modi similique, veniam soluta minus reprehenderit ullam at optio consequuntur doloribus officia voluptas.</p>
+            <a href="">Download CV</a>
+        </div>
+
+        <div class="img-box">
+            <img src="images/background.webp" class="back-img" alt="">
+            <img src="images/handsome-man-pointing-lateral.jpg" class="main-img" alt="">
+        </div>
+    </div>
+
+    <script>
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "images/sun.png";
+            }else{
+                icon.src = "images/moon.png";
+            }
+        }
+    </script>
+</body>
+
+</html>
